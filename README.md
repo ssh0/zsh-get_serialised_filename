@@ -1,4 +1,5 @@
 # zsh-get_seriarised_filename
+
 useful function to get serialised filename
 
 # Usage
@@ -62,7 +63,7 @@ This script only returns filename but doesn't anything except that.
 
 # Install
 
-## With zsh plugin manager
+## With sh plugin manager
 
 You can use zsh-plugin-manger (antigen, zgen, zplug, and so on)
 
@@ -76,7 +77,6 @@ antigen bundle ssh0/zsh-get_seriarised_filename
 
 **zgen**
 
-
 ```
 zgen load ssh0/get_seriarised_filename
 ```
@@ -89,15 +89,18 @@ zplug "ssh0/get_seriarised_filename"
 
 ## Manuall installation
 
+This script also works in bash. If you want use this function from bash,
+you can install with below steps.
+
 1. Clone this repository into your computer.
 
 ```
 git clone https://github.com/ssh0/zsh-get_seriarised_filename.git ~/.zsh/plugins/zsh-get_seriarised_filename
 ```
 
-2. source from your `zshrc`.
+2. source from your `zshrc` (or `bashrc`).
 
-In `zshrc`:
+In `zshrc`(or `bashrc`):
 
 ```
 source $HOME/.zsh/plugins/zsh-get_seriarised_filename/get_seriarised_filename.sh
@@ -110,3 +113,4 @@ This script is published under MIT License.
 # Author
 
 ssh0 (Shotaro Fujimoto) <fuji101ijuf@gmail.com>
+
