@@ -22,7 +22,7 @@ Assume that the structure of '/path/to/save' is now
 
 Then you can get the serial-numberd file name like below:
 
-1. if you want to create "file_004.txt"
+1: if you want to create "**file_004.txt**"
 
 ```
 someoperation > "\$(get_serialised_filename -d "/path/to/save" -b "file_" -e "txt")"
@@ -34,7 +34,7 @@ someoperation > "\$(get_serialised_filename -d "/path/to/save" -b "file_" -e "tx
 someoperation > "/path/to/save/file_004.txt"
 ```
 
-2. if you want to create "05_file"
+2: if you want to create "**05_file**"
 
 ```
 someoperation > "\$(get_serialised_filename -d "/path/to/save" -n 2 -a "_file")"
@@ -46,7 +46,7 @@ someoperation > "\$(get_serialised_filename -d "/path/to/save" -n 2 -a "_file")"
 someoperation > "/path/to/save/05_file"
 ```
 
-3. if you want to create "/path/to/other/newfile_001.md"
+3: if you want to create "**/path/to/other/newfile_001.md**"
 
 ```
 someoperation > "\$(get_serialised_filename -d "/path/to/other" -b "newfile_" -e "md")"
@@ -92,13 +92,13 @@ zplug "ssh0/get_seriarised_filename"
 This script also works in bash. If you want use this function from bash,
 you can install with below steps.
 
-1. Clone this repository into your computer.
+1: Clone this repository into your computer.
 
 ```
 git clone https://github.com/ssh0/zsh-get_seriarised_filename.git ~/.zsh/plugins/zsh-get_seriarised_filename
 ```
 
-2. source from your `zshrc` (or `bashrc`).
+2: source from your `zshrc` (or `bashrc`).
 
 In `zshrc`(or `bashrc`):
 
