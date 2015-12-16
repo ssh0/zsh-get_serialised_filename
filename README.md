@@ -48,7 +48,7 @@ someoperation > "/path/to/save/05_file"
 3. if you want to create "/path/to/other/newfile_001.md"
 
 ```
-someoperation > "\$(get_serialised_filename -d "/path/to/other" -b )"
+someoperation > "\$(get_serialised_filename -d "/path/to/other" -b "newfile_" -e "md")"
 ```
 
 (equal)
