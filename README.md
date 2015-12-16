@@ -1,4 +1,4 @@
-# zsh-get_seriarised_filename
+# zsh-get_serialised_filename
 
 useful function to get serialised filename
 
@@ -57,19 +57,19 @@ In your `zshrc`:
 **antigen**
 
 ```
-antigen bundle ssh0/zsh-get_seriarised_filename
+antigen bundle ssh0/zsh-get_serialised_filename
 ```
 
 **zgen**
 
 ```
-zgen load ssh0/get_seriarised_filename
+zgen load ssh0/get_serialised_filename
 ```
 
 **zplug**
 
 ```
-zplug "ssh0/get_seriarised_filename"
+zplug "ssh0/get_serialised_filename"
 ```
 
 ## Manuall installation
@@ -80,7 +80,7 @@ you can install with below steps.
 1: Clone this repository into your computer.
 
 ```
-git clone https://github.com/ssh0/zsh-get_seriarised_filename.git ~/.zsh/plugins/zsh-get_seriarised_filename
+git clone https://github.com/ssh0/zsh-get_serialised_filename.git ~/.zsh/plugins/zsh-get_serialised_filename
 ```
 
 2: source from your `zshrc` (or `bashrc`).
@@ -88,7 +88,7 @@ git clone https://github.com/ssh0/zsh-get_seriarised_filename.git ~/.zsh/plugins
 In `zshrc`(or `bashrc`):
 
 ```
-source $HOME/.zsh/plugins/zsh-get_seriarised_filename/get_seriarised_filename.sh
+source $HOME/.zsh/plugins/zsh-get_serialised_filename/get_serialised_filename.sh
 ```
 
 # License
