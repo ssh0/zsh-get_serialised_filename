@@ -7,7 +7,8 @@
 
 get_serialised_filename() {
 
-  local root_dir num_of_digits checkint optstr pattern i filename
+  local root_dir filename_before num_of_digits filename_after filename_extension
+  local checkint optstr pattern i filename
 
   # default value
   root_dir="$(pwd)"    # option -d
@@ -15,16 +16,17 @@ get_serialised_filename() {
 
 
   usage() {
-    echo "Usage: get_serialised_filename [OPTOINS]"
-    echo ""
-    echo "See help message from command line by:"
-    echo "    get_serialised_filename -h"
-    echo ""
+    cat << EOF >&2
+Usage: get_serialised_filename [OPTOINS]
+
+See help message from command line by:
+    get_serialised_filename -h
+EOF
   }
 
 
   long_usage() {
-    cat << EOF
+    cat << EOF >&2
 
 NAME
       get_serialised_filename - useful function to get serialised filename
@@ -133,7 +135,7 @@ EOF
 
   # check whether at least one necessary arguments are given
   [ $checkint = 0 ] && {
-    usage; echo "missing some necessary arguments"; return 1
+    usage; echo "missing some necessary arguments" >&2;  return 1
   }
 
   # if filename_extension is not empty, add "." before the extension.
